@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+:root {
+  --main-color: #0D6FA7;
+  --text-color: #000;
+}
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+a { 
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 20px;
+}
+
+#main-header > .container {
+  /* outline: 1px solid red; */
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#main-header > .container > h1 img {
+  width: 159px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+}
+
+#gnb li {
+  display: inline-block;
+  /* outline: 1px solid black; */
+  left: 50%;
+  margin-top: 32px;
+  margin-left: 48px;  
+}
+
+#gnb li a {
+  color: var(--text-color);
+}
+
+#gnb li a:hover {
+  color: var(--main-color);
+}
+
+#main-header > .container .search {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  display: flex;
+}
+
+.search .fa {
+  font-size: 14px;
+}
+
+.search #btn-top {
+  width: 45px;
+  height: 32px;
+  border: none;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.search input[type=search] {
+  width: 178px;
+  height: 32px;
+}
+/* Header 완성 */
+
+
+
+#main-visual {
+  position: relative;
+  width: 1920px;
+  height: 720px;
+}
+
+#main-visual > .container {
+  /* outline: 1px solid yellow; */
+  margin: 0 auto;
+  position: absolute;
+  width: 1920px;
+  height: 720px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background-image: url(../images/main-visual.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#main-visual > .container > h2 {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Nanum Brush Script', cursive;
+  font-weight: 300;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+}
+
+#main-visual > .container > #btn-visual {
+  font-size: 18px;
+  color: #fff;
+  width: 292px;
+  height: 52px;
+  border-radius: 26px;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.466);
+  position: absolute;
+  left: 60%;
+  top: 55%;
+  cursor: pointer;
+}
+/* main-visual 완성 */
+
+
+#recommendation > .container {
+  /* outline: 1px solid green; */
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px; 
+}
+
+#recommendation > .container > h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+#recommendation > .container > .destination {
+  /* outline: 1px solid purple; */
+  margin-top: 42px;
+  width: 1200px;
+  height: 562px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#recommendation > .container > .destination > .box {
+  /* outline: 1px solid pink; */
+  width: 562px;
+  height: 250px;
+  position: relative;
+}
+
+#recommendation > .container > .destination > 
+.box > .text-box {
+  width: 278px;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#recommendation > .container > .destination > 
+.box:first-child {
+  background-image: url(../images/beach.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+#recommendation > .container > .destination > 
+.box:nth-child(2) {
+  background-image: url(../images/Istanbul.jpg);
+  background-size: cover;
+}
+
+#recommendation > .container > .destination > 
+.box:nth-child(3) {
+  background-image: url(../images/night.png);
+  background-position: right;
+}
+
+#recommendation > .container > .destination > 
+.box:last-child {
+  background-image: url(../images/gyeongju.jpg);
+  background-size: cover;
+  background-position: left;
+
+}
+
+#recommendation > .container > .destination > 
+.box > .text-box h5 {
+  font-size: 20px;
+  margin-top: 73px;
+  color: var(--text-color);
+}
+
+#recommendation > .container > .destination > 
+.box > .text-box h5 .city {
+  color: var(--main-color);
+}
+
+#recommendation > .container > .destination > 
+.box > .text-box .cost {
+  margin-top: 27px;
+  font-weight: 800;
+}
+
+#recommendation > .container > .destination > 
+.box > .text-box .tag {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* recommandation 완성*/
+
+
+#once {
+  background-image: url(../images/bg_grandcanyon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+   height: 610px;
+   margin-top: 101px;
+}
+
+#once > .container {
+  /* outline: 1px solid orange; */
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+  text-align: center;
+  
+}
+
+#once > .container > h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--text-color);
+  margin-top: 100px;
+  
+}
+
+#once > .container .group-box {
+  display: flex;
+}
+
+#once > .container .imgbox {
+  width: 50%;
+  height: 335px;
+  margin-top: 42px;
+  border-radius: 17px;
+  /* outline: 1px solid springgreen; */
+}
+
+#once > .container .imgbox img {
+  border-radius: 17px;
+}
+
+#once > .container > .group-box > .text-box2 
+.bucketlist {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 50px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+#once > .container > .group-box > .text-box2 p {
+  margin-top: 86px;
+  text-align: left;
+  color: var(--text-color);
+  margin-left: 48px;  
+}
+
+#once > .container > .group-box > .text-box2
+#btn-last {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: -130px;
+}
+/* 인생은 한번뿐 완성 */
+
+
+footer > .container > .footer-box1 {
+  width: 1200px;
+  height: 133px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+}
+
+footer > .container > .footer-box1 > .info >
+.footer-text {
+  font-weight: bold;
+}
+
+footer > .container > .footer-box1 > .info >
+.footer-text > .blue {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+footer > .container > .footer-box2 {
+  width: 1920px;
+  height: 125px;
+  background: #0D6FA7;
+}
+
+footer > .container > .footer-box2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 39px;
+  font-size: 16px;
+}
+
+footer > .container > .footer-box2 > .footer-info { 
+  opacity: 50%;
+  padding-bottom: 18px;
+}
+
+footer > .container > .footer-box2 > .footer-info a {
+  color: #fff;
+}
+
+footer > .container > .footer-box2 > .copyrights {
+  color: #fff;
+  opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
